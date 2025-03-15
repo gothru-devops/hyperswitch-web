@@ -18,6 +18,7 @@ const devServer = {
   static: {
     directory: path.join(__dirname, "dist"),
   },
+  allowedHosts: "all",
   hot: true,
   host: "0.0.0.0",
   port: 9050,
