@@ -13,7 +13,7 @@ const devServer = {
   proxy: [
     {
       context: ["/payments"],
-      target: "http://localhost:5252",
+      target: "https://billing.gothru.co",
       changeOrigin: true,
       secure: true,
       pathRewrite: { "^/payments": "" },

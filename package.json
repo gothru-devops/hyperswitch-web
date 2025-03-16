@@ -33,6 +33,7 @@
     "re:format": "rescript format -all",
     "re:start": "rescript -w",
     "setup:playground": "npm run postinstall && cd Hyperswitch-React-Demo-App && node promptScript.js",
+    "local:start": "npm run re:build && webpack serve --config webpack.dev.js --host 0.0.0.0 --mode development",
     "start": "cross-env sdkEnv=local webpack serve --config webpack.dev.js",
     "start:playground": "npm run setup:playground && npm run start",
     "test": "cd cypress-tests && npm run cypress:run",

@@ -15,6 +15,7 @@ const endpointMap = {
 const backendEndPoint = endpointMap[sdkEnv] || endpointMap.local;
 
 const devServer = {
+  webSocketServer: false,
   static: {
     directory: path.join(__dirname, "dist"),
   },
